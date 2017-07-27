@@ -1,4 +1,4 @@
-package com.example.alina.maexxle;
+package de.alina.maexxle;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import android.os.Vibrator;
+
 
 /**
  * Diese Klasse repräsentiert die Ansicht mit 2 Würfeln und 2 Buttons

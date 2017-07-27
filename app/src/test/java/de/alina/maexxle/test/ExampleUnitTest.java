@@ -1,4 +1,4 @@
-package com.example.alina.maexxle;
+package de.alina.maexxle.test;
 
 import org.junit.Test;
 

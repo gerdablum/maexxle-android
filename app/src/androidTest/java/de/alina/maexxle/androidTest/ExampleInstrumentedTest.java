@@ -1,4 +1,4 @@
-package com.example.alina.maexxle;
+package de.alina.maexxle.androidTest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.alina.maexxle", appContext.getPackageName());
+        assertEquals("de.alina.maexxle", appContext.getPackageName());
     }
 }

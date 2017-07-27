@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.alina.maexxle">
+    package="de.alina.maexxle">
 
     <uses-permission
         android:name="android.permission.VIBRATE" />
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainDices">
+        <activity android:name="de.alina.maexxle.MainDices">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

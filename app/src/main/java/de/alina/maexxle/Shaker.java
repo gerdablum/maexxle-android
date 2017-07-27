@@ -1,4 +1,4 @@
-package com.example.alina.maexxle;
+package de.alina.maexxle;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
