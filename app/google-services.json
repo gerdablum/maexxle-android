@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "726193128162",
+    "firebase_url": "https://androidmaexxle.firebaseio.com",
+    "project_id": "androidmaexxle",
+    "storage_bucket": "androidmaexxle.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726193128162:android:8dce066eba16d54b",
+        "android_client_info": {
+          "package_name": "de.alina.maexxle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726193128162-1lmn7g0r20edo46so5fmojh1mh0n4q1j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "de.alina.maexxle",
+            "certificate_hash": "c284c246832104976338f02db2ebfe3cf52ce3e5"
+          }
+        },
+        {
+          "client_id": "726193128162-en4s9ha2akdvntd8e329n1b2i83alf2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSO3nvsYD6YVlKvAO9n0kEHjFGpoyVlo4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726193128162-en4s9ha2akdvntd8e329n1b2i83alf2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import android.os.Vibrator;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 
 
 /**
@@ -27,6 +30,7 @@ public class MainDices extends AppCompatActivity {
     private boolean isVibratorOn = true;
     private Dices dices;
     private Vibrator v;
+    private AdView mAdView;
 
     /**
      * Würfel anzeigen/verbergen
@@ -105,6 +109,11 @@ public class MainDices extends AppCompatActivity {
         //Checkbox default true setzen
         checkVibration.setChecked(true);
 
+        //Werbeobjekte setzen
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
         //ActionListener setzen
         showHide.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,9 +149,10 @@ public class MainDices extends AppCompatActivity {
             @Override
             public void onShake(int count) {
 				throwDices();
-                System.out.println("Phone was shaked");
             }
         });
+
+
 
     }
 
