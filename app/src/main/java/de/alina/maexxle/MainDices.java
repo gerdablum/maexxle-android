@@ -1,10 +1,16 @@
 package de.alina.maexxle;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.*;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.*;
 import android.os.Vibrator;
@@ -31,6 +37,7 @@ public class MainDices extends AppCompatActivity {
     private Dices dices;
     private Vibrator v;
     private AdView mAdView;
+    private android.support.v7.widget.Toolbar toolbar;
 
     /**
      * Würfel anzeigen/verbergen
@@ -92,7 +99,6 @@ public class MainDices extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dices);
-
         //neues Würfelobjekt anlegen
         dices = new Dices();
 
@@ -112,7 +118,19 @@ public class MainDices extends AppCompatActivity {
         //Werbeobjekte setzen
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
+
+                // Add a test device to show Test Ads
+                /*addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("8890851425653FFAB85109EAAFFE6BD5")
+                .build();*/
+
+        // Load ads into Banner Ads
         mAdView.loadAd(adRequest);
+
+        //Toolbar initialize
+        toolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(toolbar);
+
 
         //ActionListener setzen
         showHide.setOnClickListener(new View.OnClickListener() {
@@ -153,6 +171,34 @@ public class MainDices extends AppCompatActivity {
         });
 
 
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_rules:
+                // User chose the "Settings" item, show the app settings UI...
+                Intent intent = new Intent(this, RulesActivity.class);
+                startActivity(intent);
+                return true;
+
+            case R.id.action_settings:
+                // User chose the "Favorite" action, mark the current item
+                // as a favorite...
+                return true;
+
+            default:
+                // If we got here, the user's action was not recognized.
+                // Invoke the superclass to handle it.
+                return super.onOptionsItemSelected(item);
+        }
 
     }
 

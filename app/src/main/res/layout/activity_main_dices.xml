@@ -5,19 +5,26 @@
     android:id="@+id/activity_main_dices"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="de.alina.maexxle.MainDices">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
     <CheckBox
         android:text="Vibration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/isVibratorOn"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/my_toolbar"
+        android:layout_marginTop="16dp"
+        android:buttonTint="@color/colorPrimary"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -27,7 +34,11 @@
         android:layout_marginStart="37dp"
         android:layout_below="@+id/isVibratorOn"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="77dp" />
+        android:layout_marginTop="77dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -37,7 +48,11 @@
         android:layout_marginLeft="111dp"
         android:layout_marginEnd="44dp"
         android:layout_alignTop="@+id/imageDice1"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"/>
 
     <Button
         android:text="würfeln"
@@ -45,10 +60,13 @@
         android:layout_height="wrap_content"
         android:id="@+id/throwing"
         android:background="@color/grey"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_alignBaseline="@+id/showHide"
         android:layout_alignBottom="@+id/showHide"
         android:layout_alignParentStart="true"
-        android:layout_alignEnd="@+id/imageDice1" />
+        android:layout_alignEnd="@+id/imageDice1"
+       />
 
     <Button
         android:text="verstecken"
@@ -60,21 +78,27 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="95dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_alignStart="@+id/imageDice2" />
+
     <RelativeLayout
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_alignTop="@+id/imageDice1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="121dp">
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_ad_unit_id"
             android:layout_alignParentBottom="true"
-            ads:adSize="BANNER"
-            ads:adUnitId="@string/banner_ad_unit_id">
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp">
         </com.google.android.gms.ads.AdView>
 
     </RelativeLayout>

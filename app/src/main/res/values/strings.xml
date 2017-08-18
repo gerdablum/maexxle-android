@@ -1,4 +1,30 @@
 <resources>
     <string name="app_name">Mäxxle</string>
-    <string name="banner_ad_unit_id" >ca-app-pub-9820721643295933/2665956719</string>
+    <string name="banner_ad_unit_id">ca-app-pub-9820721643295933/2665956719</string>
+    <string name="title_activity_rules">RulesActivity</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_rules">Regeln</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="toolbar_rules_caption">Regeln</string>
+    <string name="rules_caption">Mäxxle Regeln</string>
+    <string name="rules1">Mäxchen kann mit einer beliebigen Anzahl an Mitspielern gespielt werden und wird gern als Trinkspiel verwendet</string>
+    <string name="rules2">Gewürfelt wird reihum. Der Würfelnde schaut seinen Wurf heimlich an und versteckt ihn danach wieder.
+        Dabei sagt er den Wert des Wurfes an - hier darf er frei lügen, so er möchte. Wenn er die Runde nicht begonnen hat,
+        muss der angesagte Wert höher sein als der des Vorspielers. Anschließend reicht er das Smartphone mit den versteckten Augenzahlen an den nächsten Spieler weiter.
+        Dieser hat nun die Wahl:</string>
+    <string name="rules3">Glaubt er seinem Vorspieler, dann muss er auch hoffen, dessen Ergebnis übertrumpfen zu können und würfelt seinerseits
+        ohne den wahren Wert der Würfel zu überprüfen. Egal was er würfelt, der Wert, den er für seinen nachfolgenden Spieler ansagt, muss höher sein
+        - notfalls muss er lügen</string>
+    <string name="rules4">Glaubt er ihm hingegen nicht, bezichtigt also seinen Vorspieler der Lüge, dann wird der Becher für alle sichtbar gehoben. War der angesagte Wert
+        höher als der reale Wert der Würfel, wird der vorherige und somit lügende Spieler bestraft; war der angesagte Wert jedoch kleiner oder gleich dem realen Wert der Würfel,
+        wird er selbst bestraft – meist mit Punktabzug.</string>
+    <string name="rules5">Die Runde endet, wenn einer seinen Vorspieler der Lüge bezichtigt oder wenn keine Wertsteigerung mehr möglich ist. Die neue Runde beginnt mit dem Gewinner der letzten Runde.
+
+Oft erhält zu Beginn des Spiels jeder Spieler ein Konto von zum Beispiel 10 Punkten. Nach jeder Runde wird dem Verlierer ein Punkt davon abgezogen. Gewonnen hat am Ende der, der noch Punkte auf seinem Konto hat.</string>
+    <string name="rules_values">Es gibt verschiedene Möglichkeiten die Wurfwerte zu ermitteln, so gut wie nie werden die Augen beider Würfel einfach so zusammen gezählt.
+        Klassisch wird der Wert des höherwertigen Würfels als Zehnerstelle, der des niederwertigen als Einerstelle interpretiert. Damit ergibt sich die Reihenfolge:
+        (21), 31, 32, 41, 42, 43, 51, 52, 53, 54, 61, 62, 63, 64, 65. Gesprochen wird Einunddreißig, Zweiunddreißig usw. Dem folgen die Paschwürfe, also zwei gleiche Zahlen mit Einer-Pasch bis Sechser-Pasch.
+        Meist steht die Einundzwanzig (21) am Ende der Reihe - ist also der höchste Wert - und wird als Mäxchen oder ähnlichem bezeichnet.</string>
+    <!--ID for testing only:-->
+    <!--<string name="banner_ad_unit_id" >ca-app-pub-3940256099942544/6300978111</string>-->
 </resources>
