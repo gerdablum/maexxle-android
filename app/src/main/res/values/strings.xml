@@ -7,24 +7,21 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="toolbar_rules_caption">Regeln</string>
     <string name="rules_caption">Mäxxle Regeln</string>
-    <string name="rules1">Mäxchen kann mit einer beliebigen Anzahl an Mitspielern gespielt werden und wird gern als Trinkspiel verwendet</string>
-    <string name="rules2">Gewürfelt wird reihum. Der Würfelnde schaut seinen Wurf heimlich an und versteckt ihn danach wieder.
-        Dabei sagt er den Wert des Wurfes an - hier darf er frei lügen, so er möchte. Wenn er die Runde nicht begonnen hat,
-        muss der angesagte Wert höher sein als der des Vorspielers. Anschließend reicht er das Smartphone mit den versteckten Augenzahlen an den nächsten Spieler weiter.
-        Dieser hat nun die Wahl:</string>
-    <string name="rules3">Glaubt er seinem Vorspieler, dann muss er auch hoffen, dessen Ergebnis übertrumpfen zu können und würfelt seinerseits
-        ohne den wahren Wert der Würfel zu überprüfen. Egal was er würfelt, der Wert, den er für seinen nachfolgenden Spieler ansagt, muss höher sein
-        - notfalls muss er lügen</string>
-    <string name="rules4">Glaubt er ihm hingegen nicht, bezichtigt also seinen Vorspieler der Lüge, dann wird der Becher für alle sichtbar gehoben. War der angesagte Wert
-        höher als der reale Wert der Würfel, wird der vorherige und somit lügende Spieler bestraft; war der angesagte Wert jedoch kleiner oder gleich dem realen Wert der Würfel,
-        wird er selbst bestraft – meist mit Punktabzug.</string>
-    <string name="rules5">Die Runde endet, wenn einer seinen Vorspieler der Lüge bezichtigt oder wenn keine Wertsteigerung mehr möglich ist. Die neue Runde beginnt mit dem Gewinner der letzten Runde.
-
-Oft erhält zu Beginn des Spiels jeder Spieler ein Konto von zum Beispiel 10 Punkten. Nach jeder Runde wird dem Verlierer ein Punkt davon abgezogen. Gewonnen hat am Ende der, der noch Punkte auf seinem Konto hat.</string>
-    <string name="rules_values">Es gibt verschiedene Möglichkeiten die Wurfwerte zu ermitteln, so gut wie nie werden die Augen beider Würfel einfach so zusammen gezählt.
-        Klassisch wird der Wert des höherwertigen Würfels als Zehnerstelle, der des niederwertigen als Einerstelle interpretiert. Damit ergibt sich die Reihenfolge:
-        (21), 31, 32, 41, 42, 43, 51, 52, 53, 54, 61, 62, 63, 64, 65. Gesprochen wird Einunddreißig, Zweiunddreißig usw. Dem folgen die Paschwürfe, also zwei gleiche Zahlen mit Einer-Pasch bis Sechser-Pasch.
-        Meist steht die Einundzwanzig (21) am Ende der Reihe - ist also der höchste Wert - und wird als Mäxchen oder ähnlichem bezeichnet.</string>
+    <string name="rules1">Gespielt wird reihum. Wenn du an der Reihe bist, würfelst du, indem du das Smartphone schüttelst. Verstecke
+    deinen Wurf und gib das Smartphone an den nächsten Spieler weiter. Dabei sagst du ihm laut, was du gewürfelt hast.</string>
+    <string name="rules2">Dein Wurf wird wie folgt gewertet: Die höhere Zahl ist die Zehnerzahl, die niedrigere die Einerzahl. Hast
+    du also eine 4 und eine 5 gewürfelt, so hat der Wurf den Wert 54. Päsche sind mehr Wert, als zwei unterschiedliche Zahlen.
+    Der höchste Wurf ist 21, auch Mäxle genannt. Wenn du ein Mäxle gewürfelt hast, ist die Runde beendet, denn keiner kann dich
+    überbieten.</string>
+    <string name="rules3">Jeder Wert, den du würfelst muss höher sein als der deines Vorgängers. Wenn du einen niedrigeren
+    Wert gewürfelt hast als dein Vorgänger, musst du lügen. Das heißt du sagst irgendeinen höheren Wert an und hoffst, dass dein
+    Nachfolger dir glaubt. Dieser kann nämlich den Wurf aufdecken, falls er dir nicht glaubt. Wenn er recht hat, hast du die Runde verloren.
+    Hat er dich fälschlicherweise als Lügner bezeichnet, hat dein Nachfolger die Runde verloren.</string>
+    <string name="rules4">Dein Nachfolger kann dir natürlich auch glauben, dann geht die Runde einfach mit dem nächsten Spieler
+        weiter. Jeder Verlierer der aktuellen Runde muss trinken, falls ihr das Spiel als Trinkspiel spielt.
+    Als Trostpreis darf er die neue Runde beginnen. Bei einem Mäxle müssen übrigens alle trinken.</string>
+    <string name="rules5"></string>
+    <string name="rules_values"></string>
     <!--ID for testing only:-->
     <!--<string name="banner_ad_unit_id" >ca-app-pub-3940256099942544/6300978111</string>-->
 </resources>
